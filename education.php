@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
+    <title>Education Achievements</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -30,6 +30,16 @@
             height: 250px;
             object-fit: cover;
             margin-bottom: 20px;
+            animation: bounce 2s infinite alternate; /* Animation for the picture */
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
         }
 
         h1 {
@@ -42,7 +52,7 @@
             justify-content: space-between;
         }
 
-        .skill {
+        .education {
             width: calc(50% - 10px);
             /* 50% width with a small gap between columns */
             margin-bottom: 20px;
@@ -50,12 +60,19 @@
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            background-color: #f9f9f9;
+            background-color: #46E1E8;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .skill strong {
+        .education:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+             background-color: #fff;
+        }
+
+        .education strong {
             font-weight: bold;
-            color: #007bff;
+            color: #333;
         }
     </style>
 </head>
@@ -63,20 +80,26 @@
 <body>
     <?php include 'navbar.php'; ?>
     <div class="container" style="background-color: #46E1E8;">
-        <img src="images/pic.png" alt="Profile Picture" class="profile-img">
-        <h1>Skills</h1>
+        <img id="profile-img" src="images/pic.png" alt="Profile Picture" class="profile-img">
+        <h1>Education Achievements</h1>
         <div class="info">
-            <div class="skill">
-                <p><strong>Skill 1:</strong> Description of skill 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="education">
+                <p><strong>Degree in Information Technology:</strong> Graduated from South Eastern Kenya University in 2023.</p>
             </div>
-            <div class="skill">
-                <p><strong>Skill 2:</strong> Description of skill 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="education">
+                <p><strong>Cloud Computing Course (HCIA):</strong> Completed the Huawei Certified ICT Associate (HCIA) Cloud Computing course.</p>
             </div>
-            <div class="skill">
-                <p><strong>Skill 3:</strong> Description of skill 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="education">
+                <p><strong>DHIS Certificate:</strong> Obtained a certificate from the DHIS2 Academy at the University of Oslo.</p>
             </div>
-            <div class="skill">
-                <p><strong>Skill 4:</strong> Description of skill 4. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="education">
+                <p><strong>Ethical Hacking Course (In Progress):</strong> Currently pursuing the Ethical Hacking course from Kenyatta University.</p>
+            </div>
+            <div class="education">
+                <p><strong>Learning Power BI:</strong> Currently learning Power BI for data visualization and analytics.</p>
+            </div>
+            <div class="education">
+                <p><strong>Mastery of Programming Languages:</strong> Proficient in various programming languages including Java, Python, JavaScript, C++, and others.</p>
             </div>
         </div>
     </div>
