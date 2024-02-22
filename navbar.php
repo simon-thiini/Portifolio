@@ -13,6 +13,9 @@
           <a class="nav-link active" aria-current="page" href="skills.php"> skills</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="experience.php">Experience</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="education.php">Education</a>
         </li>
         <li class="nav-item dropdown">
